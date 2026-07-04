@@ -3,23 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="0">
   <title>Cygnus光学用户管理</title>
   <style>
     body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 40px; color: #18202a; }
     a { color: #1769aa; }
+    code { background: #f1f4f8; border-radius: 4px; padding: 2px 5px; }
+    .meta { color: #5c6875; font-size: 13px; }
   </style>
 </head>
 <body>
   <h1>Cygnus光学用户管理</h1>
   <p id="status">正在检测局域网服务...</p>
+  <p class="meta">页面更新时间：<code>2026-07-04 12:43:57 UTC</code></p>
   <p>
     <a id="lanLink" href="http://10.3.10.95:8000">局域网入口</a>
     &nbsp;|&nbsp;
-    <a id="publicLink" href="https://periods-four-walk-parent.trycloudflare.com">公网入口</a>
+    <a id="publicLink" href="https://landing-administrator-reserve-ownership.trycloudflare.com">公网入口</a>
   </p>
+  <p class="meta">局域网：<code>http://10.3.10.95:8000</code></p>
+  <p class="meta">公网转发：<code>https://landing-administrator-reserve-ownership.trycloudflare.com</code></p>
   <script>
     const lanUrl = "http://10.3.10.95:8000";
-    const publicUrl = "https://periods-four-walk-parent.trycloudflare.com";
+    const publicUrl = "https://landing-administrator-reserve-ownership.trycloudflare.com";
     const statusEl = document.getElementById("status");
     let done = false;
 
