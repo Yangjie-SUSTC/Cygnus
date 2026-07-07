@@ -16,18 +16,18 @@
 </head>
 <body>
   <h1>Cygnus光学用户管理</h1>
-  <p id="status">正在检测局域网服务...</p>
-  <p class="meta">页面更新时间：<code>2026-07-07 14:27:54 UTC</code></p>
+  <p id="status">正在检测局域网 HTTPS 服务...</p>
+  <p class="meta">页面更新时间：<code>2026-07-07 14:42:38 UTC</code></p>
   <p>
-    <a id="lanLink" href="https://10.3.10.95:8443">局域网入口</a>
+    <a id="lanLink" href="https://10.3.10.95:8443">局域网 HTTPS 入口</a>
     &nbsp;|&nbsp;
-    <a id="publicLink" href="https://fixtures-partners-transparent-constantly.trycloudflare.com">公网入口</a>
+    <a id="publicLink" href="https://mounts-knowledgestorm-stop-expenses.trycloudflare.com">公网入口</a>
   </p>
-  <p class="meta">局域网：<code>https://10.3.10.95:8443</code></p>
-  <p class="meta">公网转发：<code>https://fixtures-partners-transparent-constantly.trycloudflare.com</code></p>
+  <p class="meta">局域网 HTTPS：<code>https://10.3.10.95:8443</code></p>
+  <p class="meta">公网转发：<code>https://mounts-knowledgestorm-stop-expenses.trycloudflare.com</code></p>
   <script>
     const lanUrl = "https://10.3.10.95:8443";
-    const publicUrl = "https://fixtures-partners-transparent-constantly.trycloudflare.com";
+    const publicUrl = "https://mounts-knowledgestorm-stop-expenses.trycloudflare.com";
     const statusEl = document.getElementById("status");
     let done = false;
 
@@ -38,7 +38,7 @@
     }
 
     function fallback() {
-      statusEl.textContent = "局域网连接失败，正在切换公网转发...";
+      statusEl.textContent = "局域网 HTTPS 连接失败，正在切换公网转发...";
       go(publicUrl);
     }
 
